@@ -1,44 +1,54 @@
 # Open World Game
 
-**Full 3D open-world game project** built with **Godot 4**.
+**Full 3D open-world game** built with Godot 4.
 
-This is a proper game project (not HTML / browser toy).
+Now with **automatic Android APK builds** via GitHub Actions.
 
-### Requirements
-- [Godot Engine 4.3+](https://godotengine.org/download) (free)
+---
 
-### How to play
-1. Download / clone this repository
-2. Open **Godot Engine**
-3. Click **Import** → select the `project.godot` file in this folder
-4. Press **F5** or the Play button
+## How to get the APK (No PC needed)
 
-### Controls
-- **WASD** – Move
-- **Mouse** – Look
-- **Space** – Jump
-- **Shift** – Sprint
-- **Esc** – Release mouse
+1. Go to the **Actions** tab of this repository:  
+   https://github.com/afnan-ab/open-world-game/actions
 
-### Features included
-- First-person character controller with physics
-- Large open terrain
-- High-quality lighting + environment (not low-poly style)
-- Smooth camera and movement
-- Jump and sprint
-- Atmospheric fog and ambient lighting
+2. Click on the latest **Build Android APK** workflow run (or trigger it manually with "Run workflow").
 
-### Project structure
-```
-├── project.godot
-├── scenes/
-│   ├── main.tscn
-│   ├── player.tscn
-│   └── world.tscn
-├── scripts/
-│   ├── player.gd
-│   └── world.gd
-└── README.md
-```
+3. Wait until it finishes (green checkmark).
 
-This is a complete runnable game project foundation. You can expand it with more assets, quests, enemies, vehicles, etc. inside Godot.
+4. Scroll down to **Artifacts**.
+
+5. Download **OpenWorldGame-APK**.
+
+6. Unzip it and install the `.apk` on your Android phone.
+
+> You may need to allow "Install from unknown sources" in your phone settings.
+
+---
+
+## Controls (on phone)
+
+Currently keyboard/mouse oriented. For best mobile experience you can later add virtual joystick + look pad in Godot.
+
+- Move: WASD (or connect a Bluetooth controller)
+- Look: Mouse / touch drag (limited)
+- Jump: Space
+- Sprint: Shift
+
+---
+
+## Project Info
+
+- Engine: Godot 4.3
+- Type: Full native 3D game (not HTML)
+- Features: First-person controller, large terrain, quality lighting, shadows, fog
+- Package name: `com.afnan.openworldgame`
+
+---
+
+## Manual trigger
+
+You can force a new APK build anytime:
+
+1. Go to **Actions** tab
+2. Select **Build Android APK**
+3. Click **Run workflow** → **Run workflow**
